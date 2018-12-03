@@ -104,7 +104,7 @@ nav h1 a {
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
-    background-color: #eee;
+  /*background-color: #eee;*/
     font-size: 17px;
     margin: 0;
     width: calc(50% - 80px);
@@ -361,6 +361,7 @@ nav h1 a {
 	border-radius: 10px;
 	box-shadow: 2px 2px 2px;
 }
+
 
 
 #reviews-list li p {
