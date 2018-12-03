@@ -165,6 +165,7 @@ createReviewHTML = (review) => {
   comments.innerHTML = review.comments;
   li.appendChild(comments);
   li.setAttribute('tabindex', '0'); //added tabindex to set focus
+  li.setAttribute("aria-label", "comments"); //added aria-label to improve accessibility
   return li;
 }
 
