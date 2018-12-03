@@ -166,6 +166,8 @@ createRestaurantHTML = (restaurant) => {
 
   const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
+  name.setAttribute('tabindex', '0'); // set focus on restaurant name for accessibility
+  name.setAttribute("aria-label", restaurant.name); // set aria-label to improve accessibility
   li.append(name);
 
   const neighborhood = document.createElement('p');
@@ -179,6 +181,8 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.setAttribute("aria-label", "Details about " + restaurant.name) //set aria-label to improve accessibility 
+  more.setAttribute("role", "button") //set role to button so that it improves accessibility
   li.append(more)
 
   return li
