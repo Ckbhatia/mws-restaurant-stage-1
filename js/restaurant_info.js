@@ -163,7 +163,7 @@ createReviewHTML = (review) => {
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
   li.appendChild(comments);
-
+  li.setAttribute('tabindex', '0'); //added tabindex to set focus
   return li;
 }
 
